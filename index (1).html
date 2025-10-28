@@ -22,17 +22,18 @@ body {
   backdrop-filter: brightness(0.8) blur(1px);
 }
 
-/* 💼 4-COLOR BLUE SUITCASE DESIGN */
+/* 💼 2-COLOR BLUE SUITCASE GRADIENT (light → dark) */
 .vending-container {
   width: 680px;
-  background: linear-gradient(135deg, #4da6ff, #3399ff, #1a8cff, #0066cc);
+  /* two-color gradient: light to dark blue */
+  background: linear-gradient(135deg, #e6f7ff 0%, #0066cc 100%);
   padding: 35px;
   border-radius: 35px;
-  box-shadow: 0 20px 60px rgba(0,0,50,0.4);
+  box-shadow: 0 20px 60px rgba(0,0,40,0.45);
   text-align: center;
   color: #fff;
   position: relative;
-  border: 8px solid #0073e6;
+  border: 8px solid #005bb5;
 }
 
 /* suitcase handle */
@@ -44,9 +45,10 @@ body {
   transform: translateX(-50%);
   width: 160px;
   height: 40px;
-  background: linear-gradient(90deg, #3399ff, #0073e6);
+  /* match light → dark two-color gradient for the handle */
+  background: linear-gradient(90deg, #e6f7ff 0%, #0066cc 100%);
   border-radius: 20px 20px 0 0;
-  box-shadow: 0 5px 10px rgba(0,0,50,0.3);
+  box-shadow: 0 5px 10px rgba(0,0,40,0.35);
 }
 
 /* suitcase corner protectors */
@@ -55,11 +57,12 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 35px;
+  /* subtle single-color corner accents matching the darker blue */
   box-shadow:
-    10px 10px 0 #0073e6,
-    -10px 10px 0 #0073e6,
-    10px -10px 0 #0073e6,
-    -10px -10px 0 #0073e6;
+    10px 10px 0 #005bb5,
+    -10px 10px 0 #005bb5,
+    10px -10px 0 #005bb5,
+    -10px -10px 0 #005bb5;
   pointer-events: none;
 }
 
